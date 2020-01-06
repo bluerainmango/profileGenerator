@@ -1,0 +1,23 @@
+{
+  "name": "profilegenerator",
+  "version": "1.0.0",
+  "description": "Generate a PDF profile from a GitHub username.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluerainmango/profileGenerator.git"
+  },
+  "author": "Emily Yu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bluerainmango/profileGenerator/issues"
+  },
+  "homepage": "https://github.com/bluerainmango/profileGenerator#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "inquirer": "^7.0.2"
+  }
+}
