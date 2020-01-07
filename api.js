@@ -16,7 +16,7 @@ class Api {
         "name",
         "avatar_url",
         "location",
-        "repos_url",
+        "html_url",
         "blog",
         "bio",
         "public_repos",

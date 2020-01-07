@@ -19,7 +19,7 @@ init();
 // User name - name
 // Links to the following:
 // User location via Google Maps - location
-// User GitHub profile - repos_url
+// User GitHub profile - html_url
 // User blog - blog
 
 // User bio - bio
