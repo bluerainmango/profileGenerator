@@ -1,19 +1,19 @@
 // prompt fav color(bg color), github username
-const inquirer = require("inquirer");
 
+const getAnswers = require("./inquiry");
 const Api = require("./api");
 
-const { questions } = require("./questions");
-let state;
+const init = async () => {
+  const answers = await getAnswers();
+  console.log(answers);
+  const user = new Api(answers);
 
-inquirer.prompt(questions).then(answers => {
-  console.log("inquiry answers:", answers);
+  await user.getInfo();
+  await user.addNofStars();
+  console.log(user.info);
+};
 
-  const info = new Api(answers);
-
-  info.getInfo();
-});
-
+init();
 //
 // Profile image - avatar_url
 // User name - name

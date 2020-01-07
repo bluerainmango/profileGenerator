@@ -21,14 +21,24 @@ class Api {
         "bio",
         "public_repos",
         "followers",
-        "public_gists",
         "following",
         "starred_url"
       ].forEach(el => {
         this.info[el] = result.data[el];
       });
 
-      console.log("this info: ", this.info);
+      //   console.log("this info: ", this.info);
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
+  async addNofStars() {
+    const url = this.info.starred_url.replace("{/owner}{/repo}", "");
+    console.log(url);
+    try {
+      const result = await axios.get(url);
+      this.info.numOfStars = result.data.length;
     } catch (err) {
       console.log(err);
     }
