@@ -6,54 +6,112 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
   </head>
+  <style>
+    html {
+      font-family: sans-serif;
+    }
+    .img {
+      margin-top: 30px;
+      width: 150px;
+      border-radius: 50%;
+      border: 4px solid rgb(255, 255, 255);
+    }
+    h2 {
+      font-weight: normal;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(0, 113, 252);
+      background-color: rgb(255, 174, 0);
+      background-color: rgb(0, 182, 36);
+      background-color: rgb(149, 0, 255);
+      color: #fff;
+    }
+    .header-link {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px;
+    }
+    .header-link > * {
+      color: #fff;
+      padding: 0 15px;
+      text-decoration: none;
+    }
+    main {
+      margin: 0 auto;
+      width: 500px;
+    }
+    .bio {
+      padding: 20px 0;
+      text-align: center;
+    }
+    .row {
+      display: flex;
+      justify-content: space-evenly;
+      text-align: center;
+    }
+    .card {
+      width: 30%;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      background-color: rgb(0, 113, 252);
+      background-color: rgb(255, 174, 0);
+      background-color: rgb(0, 182, 36);
+      background-color: rgb(149, 0, 255);
+      color: #fff;
+      border-radius: 2px;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
   <body>
     <header>
       <img
+        class="img"
         src="https://avatars2.githubusercontent.com/u/45782903?v=4"
         alt="profile image"
       />
       <h1>Emily Yu</h1>
-      <h2>company</h2>
-      <div class="header__link">
-        <span>
-          <a href="https://www.google.com/maps/place/riverside" target="_blank">
-            Riverside, CA
-          </a>
-        </span>
-        <span>
-          <a href="https://github.com/bluerainmango">
-            GitHub
-          </a>
-        </span>
-        <span>
-          <a href="https://bluerainmango.github.io/emilyYu/"> Blog</a>
-        </span>
+      <h2>UCR extention</h2>
+      <div class="header-link">
+        <a href="https://www.google.com/maps/place/riverside" target="_blank">
+          🗺 Riverside, CA
+        </a>
+        <a href="https://github.com/bluerainmango" target="_blank">
+          🔗 GitHub
+        </a>
+        <a href="https://bluerainmango.github.io/emilyYu/" target="_blank">
+          🏠 Blog</a
+        >
       </div>
     </header>
     <main>
       <div class="bio">
         <p>
-          🎮Pleasantly addicted to coding.😍💕 \r\n🕵️‍♀️A dream chaser who fell in
-          love with coding, having online & e-commerce marketing background. 🎯'
+          🎮Pleasantly addicted to coding.😍💕 🕵️‍♀️A dream chaser who fell in love
+          with coding, having online & e-commerce marketing background. 🎯'
         </p>
       </div>
-      <div class="card">
+
+      <div class="cards">
         <div class="row">
-          <div class="card--public-repo">
+          <div class="card card--public-repo">
             Public Repositories
             <span class="num-public-repo">11</span>
           </div>
-          <div class="card--followers">
+          <div class="card card--followers">
             Followers
             <span class="num-followers">5</span>
           </div>
         </div>
         <div class="row">
-          <div class="card--github-stars">
+          <div class="card card--github-stars">
             GitHub Stars
             <span class="num-github-stars">1</span>
           </div>
-          <div class="card--following">
+          <div class="card card--following">
             Following
             <span class="num-following">4</span>
           </div>
