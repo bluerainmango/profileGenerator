@@ -1,4 +1,4 @@
-// prompt fav color(bg color), github username
+const pdf = require("html-pdf");
 
 const getAnswers = require("./inquiry");
 const Api = require("./api");
@@ -11,6 +11,8 @@ const init = async () => {
   await user.getInfo();
   await user.addNofStars();
   console.log(user.info);
+
+  // pdf.create()
 };
 
 init();

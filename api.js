@@ -21,6 +21,7 @@ class Api {
         "bio",
         "public_repos",
         "followers",
+        "company",
         "following",
         "starred_url"
       ].forEach(el => {
