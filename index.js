@@ -1,7 +1,9 @@
+const fs = require("fs");
 const pdf = require("html-pdf");
 
 const getAnswers = require("./inquiry");
 const Api = require("./api");
+const HtmlGenerator = require("./HtmlGenerator");
 
 const init = async () => {
   const answers = await getAnswers();
@@ -12,20 +14,23 @@ const init = async () => {
   await user.addNofStars();
   console.log(user.info);
 
-  // pdf.create()
+  let htmlObj = new HtmlGenerator(answers.color, user.info);
+  htmlObj.injectData();
+  htmlObj.injectStyle();
+  htmlObj.injectIcons();
+
+  const html = htmlObj.getHtml();
+
+  console.log("FINAL: ", html);
+
+  // const html = fs.readFileSync("./index.html", "utf8");
+
+  pdf
+    .create(html, { format: "Letter" })
+    .toFile(`./${user.info.name}.pdf`, function(err, res) {
+      if (err) return console.log(err);
+      console.log(res);
+    });
 };
 
 init();
-//
-// Profile image - avatar_url
-// User name - name
-// Links to the following:
-// User location via Google Maps - location
-// User GitHub profile - html_url
-// User blog - blog
-
-// User bio - bio
-// Number of public repositories - public_repos
-// Number of followers - followers
-// Number of GitHub stars - starred_url => before {/owner}{/repo}.length
-// Number of users following - following
