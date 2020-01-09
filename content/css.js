@@ -20,7 +20,7 @@ exports.style = `<style>
       height: 100%;
     }
     .img {
-      margin-top: 30px;
+      margin: 30px 0 20px 0;
       width: 150px;
       border-radius: 50%;
       border: 4px solid rgb(255, 255, 255);
@@ -35,7 +35,7 @@ exports.style = `<style>
       align-items: center; */
       /* margin: 0 auto; */
       text-align: center;
-      background-color: rgb(0, 113, 252);
+      background-color: {COLOR};
       /* background-color: rgb(255, 174, 0);
       background-color: rgb(0, 182, 36);
       background-color: rgb(149, 0, 255); */
@@ -57,7 +57,7 @@ exports.style = `<style>
       width: 500px;
     }
     .bio {
-      padding: 20px 0;
+      margin: 30px 0;
       text-align: center;
     }
     .row {
@@ -71,9 +71,8 @@ exports.style = `<style>
       padding: 15px 0;
       line-height: 1.5;
       /* margin: 10px 30px; */
-      margin-top: 20px;
       display: inline-block;
-      background-color: rgb(0, 113, 252);
+      background-color: {COLOR};
       /* background-color: rgb(255, 174, 0);
       background-color: rgb(0, 182, 36);
       background-color: rgb(149, 0, 255); */
@@ -94,7 +93,7 @@ exports.style = `<style>
     }
     footer {
       margin-top: 20px;
-      background-color: rgb(0, 113, 252);
+      background-color: {COLOR};
       height: 100px;
       width: 612px;
       position: absolute;

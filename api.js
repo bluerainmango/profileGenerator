@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-class Api {
+class GitHubApi {
   constructor({ username, color }) {
     this.username = username;
     this.color = color;
@@ -24,11 +24,9 @@ class Api {
         "company",
         "following",
         "starred_url"
-      ].forEach(el => {
-        this.info[el] = result.data[el];
+      ].forEach(key => {
+        this.info[key] = result.data[key];
       });
-
-      //   console.log("this info: ", this.info);
     } catch (err) {
       console.log(err);
     }
@@ -44,6 +42,15 @@ class Api {
       console.log(err);
     }
   }
+
+  addLocationURL() {
+    const location = this.info.location;
+
+    if (!location) return;
+    this.info.locationURL = `https://www.google.com/maps/place/${location}`;
+
+    //if space exists, exchange with + for better search in Google Map
+  }
 }
 
-module.exports = Api;
+module.exports = GitHubApi;

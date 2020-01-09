@@ -19,7 +19,7 @@ exports.rawHtml = `
       <h1>{NAME}</h1>
       <h2>{COMPANY}</h2>
       <div class="header-link">
-        <a href="https://www.google.com/maps/place/{LOCATION}" target="_blank">
+        <a href={LOCATION_URL} target="_blank">
           <svg class="icon icon-location">
             <use xlink:href="#icon-location"></use>
           </svg>

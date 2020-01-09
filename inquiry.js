@@ -23,7 +23,7 @@ const questions = [
     name: "color",
     message:
       "What is your favorite color? This color will be used as the background color for PDF file.",
-    choices: ["Blue", "Red", "Green"],
+    choices: ["Blue", "Orange", "Green", "Purple"],
     filter: answer => answer.toLowerCase()
   }
 ];
