@@ -6,9 +6,10 @@ exports.rawHtml = `
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    {ICONS}
+    {STYLE}
   </head>
-  {ICONS}
-  {STYLE}
+
   <body>
     <header>
       <img
@@ -20,18 +21,21 @@ exports.rawHtml = `
       <h2>{COMPANY}</h2>
       <div class="header-link">
         <a href={LOCATION_URL} target="_blank">
+          <i class="fas fa-map-marked-alt"></i>
           <svg class="icon icon-location">
             <use xlink:href="#icon-location"></use>
           </svg>
           {LOCATION}
         </a>
         <a href={HTML_URL} target="_blank">
+          <i class="fab fa-github"></i>
           <svg class="icon icon-github">
             <use xlink:href="#icon-github"></use>
           </svg>
           GitHub
         </a>
         <a href={BLOG} target="_blank">
+          <i class="fab fa-blogger"></i>
           <svg class="icon icon-blog">
             <use xlink:href="#icon-blog"></use>
           </svg>

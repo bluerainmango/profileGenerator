@@ -6,12 +6,8 @@ exports.style = `<style>
       padding: 0;
     }
     html {
-      /* font-family: sans-serif; */
-      /* Letter - 72ppi */
       width: 612px;
       height: 792px;
-      /* height: 279mm;
-      width: 216mm; */
       -webkit-print-color-adjust: exact;
       box-sizing: border-box;
       text-rendering: optimizeLegibility;
@@ -30,20 +26,11 @@ exports.style = `<style>
       font-weight: normal;
     }
     header {
-      /* display: flex;
-      flex-direction: column;
-      align-items: center; */
-      /* margin: 0 auto; */
       text-align: center;
       background-color: {COLOR};
-      /* background-color: rgb(255, 174, 0);
-      background-color: rgb(0, 182, 36);
-      background-color: rgb(149, 0, 255); */
       color: #fff;
     }
     .header-link {
-      /* display: flex;
-      justify-content: space-around; */
       padding-top: 20px;
       padding-bottom: 30px;
     }
@@ -61,8 +48,6 @@ exports.style = `<style>
       text-align: center;
     }
     .row {
-      /* display: flex;
-      justify-content: space-evenly; */
       text-align: center;
       height: 100px;
     }
@@ -70,16 +55,10 @@ exports.style = `<style>
       width: 45%;
       padding: 15px 0;
       line-height: 1.5;
-      /* margin: 10px 30px; */
       display: inline-block;
       background-color: {COLOR};
-      /* background-color: rgb(255, 174, 0);
-      background-color: rgb(0, 182, 36);
-      background-color: rgb(149, 0, 255); */
       color: #fff;
       border-radius: 5px;
-      /* display: flex;
-      flex-direction: column; */
     }
     .row {
       width: 500px;
@@ -98,9 +77,6 @@ exports.style = `<style>
       width: 612px;
       position: absolute;
       bottom: 0;
-      /* background-color: rgb(255, 174, 0);
-      background-color: rgb(0, 182, 36);
-      background-color: rgb(149, 0, 255); */
     }
     .icon {
       display: inline-block;
@@ -109,7 +85,6 @@ exports.style = `<style>
       stroke-width: 0;
       stroke: currentColor;
       fill: currentColor;
-      /* margin-top: 3px; */
     }
     .icon-embed {
       width: 1.25em;

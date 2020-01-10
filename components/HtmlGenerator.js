@@ -1,6 +1,6 @@
-const { rawHtml } = require("./content/html");
-const { icons } = require("./content/icons");
-const { style } = require("./content/css");
+const { rawHtml } = require("../template/html");
+const { icons } = require("../template/icons");
+const { style } = require("../template/css");
 
 class HtmlGenerator {
   constructor(color, userData) {

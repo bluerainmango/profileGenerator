@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <!-- SVG icons -->
+    <svg
+      aria-hidden="true"
+      style="position: absolute; width: 0; height: 0; overflow: hidden;"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <defs>
+        <symbol id="icon-blog" viewBox="0 0 32 32">
+          <title>blog</title>
+          <path
+            d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM28 20.25c0 4.281-3.481 7.75-7.794 7.75h-8.4c-4.313 0-7.806-3.469-7.806-7.75v-8.5c0-4.281 3.494-7.75 7.806-7.75h3.931c4.313 0 7.762 3.219 7.762 7.5 0.056 0.8 0.781 1.5 1.6 1.5h1.344c0.863 0 1.55 0.906 1.55 1.762v5.488z"
+          ></path>
+          <path
+            d="M22 20c0 1.1-0.9 2-2 2h-8c-1.1 0-2-0.9-2-2v0c0-1.1 0.9-2 2-2h8c1.1 0 2 0.9 2 2v0z"
+          ></path>
+          <path
+            d="M18 12c0 1.1-0.9 2-2 2h-4c-1.1 0-2-0.9-2-2v0c0-1.1 0.9-2 2-2h4c1.1 0 2 0.9 2 2v0z"
+          ></path>
+        </symbol>
+        <symbol id="icon-github" viewBox="0 0 32 32">
+          <title>github</title>
+          <path
+            d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"
+          ></path>
+        </symbol>
+        <symbol id="icon-location" viewBox="0 0 32 32">
+          <title>location</title>
+          <path
+            d="M16 0c-5.523 0-10 4.477-10 10 0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zM16 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z"
+          ></path>
+        </symbol>
+      </defs>
+    </svg>
+    <!-- CSS Style -->
+    <style>
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        /* font-family: sans-serif; */
+        /* Letter - 72ppi */
+        width: 612px;
+        height: 792px;
+        /* height: 279mm;
+    width: 216mm; */
+        -webkit-print-color-adjust: exact;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100%;
+      }
+      .img {
+        margin-top: 30px;
+        width: 150px;
+        border-radius: 50%;
+        border: 4px solid rgb(255, 255, 255);
+      }
+      h2 {
+        line-height: 1.75;
+        font-weight: normal;
+      }
+      header {
+        /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+        /* margin: 0 auto; */
+        text-align: center;
+        background-color: rgb(0, 113, 252);
+        /* background-color: rgb(255, 174, 0);
+    background-color: rgb(0, 182, 36);
+    background-color: rgb(149, 0, 255); */
+        color: #fff;
+      }
+      .header-link {
+        /* display: flex;
+    justify-content: space-around; */
+        padding-top: 20px;
+        padding-bottom: 30px;
+      }
+      .header-link > * {
+        color: #fff;
+        padding: 0 15px;
+        text-decoration: none;
+      }
+      main {
+        margin: 0 auto;
+        width: 500px;
+      }
+      .bio {
+        padding: 20px 0;
+        text-align: center;
+      }
+      .row {
+        /* display: flex;
+    justify-content: space-evenly; */
+        text-align: center;
+        height: 100px;
+      }
+      .card {
+        width: 45%;
+        padding: 15px 0;
+        line-height: 1.5;
+        /* margin: 10px 30px; */
+        margin-top: 20px;
+        display: inline-block;
+        background-color: rgb(0, 113, 252);
+        /* background-color: rgb(255, 174, 0);
+    background-color: rgb(0, 182, 36);
+    background-color: rgb(149, 0, 255); */
+        color: #fff;
+        border-radius: 5px;
+        /* display: flex;
+    flex-direction: column; */
+      }
+      .row {
+        width: 500px;
+      }
+      .card:first-child {
+        float: left;
+        clear: both;
+      }
+      .card:last-child {
+        float: right;
+      }
+      footer {
+        margin-top: 20px;
+        background-color: rgb(0, 113, 252);
+        height: 100px;
+        width: 612px;
+        position: absolute;
+        bottom: 0;
+        /* background-color: rgb(255, 174, 0);
+    background-color: rgb(0, 182, 36);
+    background-color: rgb(149, 0, 255); */
+      }
+      .icon {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: currentColor;
+        /* margin-top: 3px; */
+      }
+      .icon-embed {
+        width: 1.25em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img
+        class="img"
+        src="https://avatars2.githubusercontent.com/u/45782903?v=4"
+        alt="profile image"
+      />
+      <h1>Emily Yu</h1>
+      <h2>UCR extention</h2>
+      <div class="header-link">
+        <a href="https://www.google.com/maps/place/riverside" target="_blank">
+          <i class="fas fa-map-marked-alt"></i>
+          <svg class="icon icon-location">
+            <use xlink:href="#icon-location"></use>
+          </svg>
+          Riverside, CA
+        </a>
+        <a href="https://github.com/bluerainmango" target="_blank">
+          <svg class="icon icon-github">
+            <use xlink:href="#icon-github"></use>
+          </svg>
+          GitHub
+        </a>
+        <a href="https://bluerainmango.github.io/emilyYu/" target="_blank">
+          <svg class="icon icon-blog">
+            <use xlink:href="#icon-blog"></use>
+          </svg>
+          Blog
+        </a>
+      </div>
+    </header>
+    <main>
+      <div class="bio">
+        <p>
+          🎮Pleasantly addicted to coding.😍💕 🕵️‍♀️A dream chaser who fell in love
+          with coding, having online & e-commerce marketing background. 🎯'
+        </p>
+      </div>
+
+      <div class="cards">
+        <div class="row">
+          <div class="card card--public-repo">
+            <p>Public Repositories</p>
+            <p class="num-public-repo">11</p>
+          </div>
+          <div class="card card--followers">
+            <p>Followers</p>
+            <p class="num-followers">5</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card card--github-stars">
+            <p>GitHub Stars</p>
+            <p class="num-github-stars">1</p>
+          </div>
+          <div class="card card--following">
+            <p>Following</p>
+            <p class="num-following">4</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
