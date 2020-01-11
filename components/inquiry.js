@@ -25,7 +25,7 @@ const questions = [
     type: "list",
     name: "color",
     message:
-      "What is your favorite color? This color will be used as the background color for PDF file.",
+      "What is your favorite color? This will be used as the background color for your PDF file.",
     choices: ["Blue", "Orange", "Green", "Purple"],
     filter: answer => answer.toLowerCase()
   }
@@ -38,7 +38,7 @@ const getAnswers = async () => {
     return await inquirer.prompt(questions);
 
   } catch (err) {
-    
+
     throw new Error(
       "🚧 Unkown error occured while processing your inquiry. Please restart the app or try later."
     );
