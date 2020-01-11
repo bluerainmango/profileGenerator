@@ -5,12 +5,18 @@
 ## 🎯 Purpose
 Quickly generate a profile by providing Github username and save it as a physical document so that you can prepare for the materials for meetings, reports, or stakeholders.
 
+## ✔️ How to use
+After install all dependencies with `npm install`, run `npm start` or `node index.js`
 
 
 ## 📄 Feature
 - Easy to use: only GitHub username and color for background of file are needed.
-- Includes a bio image from the user's GitHub profile.
-- Contains the user's location and a link to their GitHub profile.
-- Includes the number of: public repositories, followers, GitHub stars and following count.
+- Generated PDF file will be saved in 'output' folder(check the example file in the folder).
+- PDF file includes the following info.
+   - A bio image from the user's GitHub profile.
+   - A user's location and a link to their GitHub profile.
+   - The number of: public repositories, followers, GitHub stars and following count.
 
+## ✨ Demo
+![screenshot](demo.gif)
 
