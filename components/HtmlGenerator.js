@@ -12,7 +12,8 @@ class HtmlGenerator {
   }
 
   injectData() {
-    // Purpose: Replace raw HTML's placeholders to actual data
+
+    // Purpose: Replace the raw HTML's placeholders with the actual data
     const replaceList = {
       "{NAME}": this.userData.name,
       "{COMPANY}": this.userData.company,
@@ -59,10 +60,9 @@ class HtmlGenerator {
       this.html = this.html.replace(targetHTML, data);
     });
   }
-  // console.log("targetHTML: ", placeholder, targetHTML, data);
-  // console.log(`-------${placeholder} : ${iconIndex} : ${data}------`);
 
   injectStyle() {
+
     const builtInColor = {
       blue: "rgb(0, 113, 252)",
       orange: "rgb(255, 174, 0)",
@@ -70,15 +70,20 @@ class HtmlGenerator {
       purple: "rgb(149, 0, 255)"
     };
 
+    // Add color to HTML
     this.style = this.style.replace(/{COLOR}/g, builtInColor[this.color]);
+
+    // Add style to HTML
     this.html = this.html.replace("{STYLE}", this.style);
   }
 
   injectIcons() {
+
     this.html = this.html.replace("{ICONS}", this.icons);
   }
 
   getHtml() {
+    
     return this.html;
   }
 }
