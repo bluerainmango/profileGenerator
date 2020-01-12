@@ -31,7 +31,7 @@ const init = async () => {
 
   // 4. Convert HTML to PDF
   pdf
-    .create(html, { format: "Letter" })
+    .create(html)
     .toFile(`./output/${user.info.login}.pdf`, function(err, res) {
       if (err) return console.log(err);
       console.log(`\n✅  COMPLETED! \n📂  Location: ${res.filename}`);

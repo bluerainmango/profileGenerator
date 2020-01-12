@@ -6,8 +6,10 @@ exports.style = `<style>
       padding: 0;
     }
     html {
-      width: 280mm;
-      height: 340mm;
+      /* width: 280mm;
+      height: 340mm;*/
+      width: 160mm;
+      height: 190mm;
       -webkit-print-color-adjust: exact;
       box-sizing: border-box;
       text-rendering: optimizeLegibility;
@@ -74,8 +76,8 @@ exports.style = `<style>
       margin-top: 20px;
       background-color: {COLOR};
       height: 100px;
-      width: 280mm;
-      top: 300mm;
+      width: 160mm;
+      top: 180mm;
       position: absolute;
       bottom: 0;
     }
