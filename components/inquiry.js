@@ -5,9 +5,8 @@ const questions = [
     type: "input",
     name: "username",
     message:
-      "What's your github username? \n [Valid username] \n - Alphanumeric with single hyphens \n - Cannot begin or end with a hyphen \n - Max length of 39 characters \n",
+      "What's your github username? \n(Valid username: Alphanumeric with single hyphens | Cannot begin or end with a hyphen | Max length of 39 characters)",
     validate: function(answer) {
-
       // CASE 1: no input
       if (!answer) return false;
 
@@ -32,13 +31,9 @@ const questions = [
 ];
 
 const getAnswers = async () => {
-
   try {
-
     return await inquirer.prompt(questions);
-
   } catch (err) {
-
     throw new Error(
       "🚧 Unkown error occured while processing your inquiry. Please restart the app or try later."
     );

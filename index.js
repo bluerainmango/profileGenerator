@@ -6,7 +6,6 @@ const GitHubApi = require("./components/GitHubApi");
 const HtmlGenerator = require("./components/HtmlGenerator");
 
 const init = async () => {
-  
   // 1. Get answers
   const answers = await inquiry();
 
@@ -25,6 +24,9 @@ const init = async () => {
   htmlObj.injectStyle();
   htmlObj.injectIcons();
 
+  // [FOR TEST ONLY] HTML -> PDF conversion
+  // const html = fs.readFileSync("./dev/test.html", "utf8");
+
   const html = htmlObj.getHtml();
 
   // 4. Convert HTML to PDF
@@ -33,10 +35,10 @@ const init = async () => {
     .toFile(`./output/${user.info.login}.pdf`, function(err, res) {
       if (err) return console.log(err);
       console.log(`\n✅  COMPLETED! \n📂  Location: ${res.filename}`);
-    });
 
-  // [FOR TEST ONLY] HTML -> PDF conversion
-  // const html = fs.readFileSync("./index.html", "utf8");
+      //Added for Windows 10 that doesn't automatically exit.
+      process.exit(0);
+    });
 };
 
 init();
@@ -44,4 +46,6 @@ init();
 // Unhandled rejection handler
 process.on("unhandledRejection", error => {
   console.log("🚨 [ERROR]", error.message);
+
+  process.exit(0);
 });

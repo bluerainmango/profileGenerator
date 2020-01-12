@@ -6,8 +6,8 @@ exports.style = `<style>
       padding: 0;
     }
     html {
-      width: 612px;
-      height: 792px;
+      width: 280mm;
+      height: 340mm;
       -webkit-print-color-adjust: exact;
       box-sizing: border-box;
       text-rendering: optimizeLegibility;
@@ -74,7 +74,8 @@ exports.style = `<style>
       margin-top: 20px;
       background-color: {COLOR};
       height: 100px;
-      width: 612px;
+      width: 280mm;
+      top: 300mm;
       position: absolute;
       bottom: 0;
     }
