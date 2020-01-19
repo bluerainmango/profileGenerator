@@ -47,5 +47,5 @@ init();
 process.on("unhandledRejection", error => {
   console.log("🚨 [ERROR]", error.message);
 
-  process.exit(0);
+  process.exit(1);
 });
